@@ -32,7 +32,7 @@ zle-keymap-select zle-line-init() {
 	zle -R
 }
 
-# Not sure what this is for
+# Reset the cursor to block when running command
 zle-line-finish() {
 	print -n -- $CURSOR_BLCK
 }
