@@ -8,7 +8,7 @@ set tabstop=4
 set smartindent
 filetype indent plugin on
 
-" Ctrl-backspace behaviour
+" Ctrl-backspace in insert mode
 set backspace=indent,eol,start
 imap <C-BS> <C-W>
 imap <C-H> <C-W>
@@ -18,6 +18,9 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
+
+
+set wildmenu
 
 " Exit instert mode more faster (probably bad)
 set timeoutlen=0
@@ -51,8 +54,6 @@ set background=dark
 set number
 set ruler
 
-" Mouse
-set mouse=a
 
 
 "" Keybinds
@@ -63,3 +64,6 @@ set mouse=a
 " map <A-j> <C-w>j
 " map <A-k> <C-w>k
 " map <A-l> <C-w>l
+
+" Mouse
+set mouse=a
