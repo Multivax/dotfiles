@@ -1,9 +1,3 @@
-## Plugins
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
 ## Behaviour
 
 # Autocomplete
@@ -72,3 +66,8 @@ export CLICOLOR=1
 
 # Download all files in a directory listing
 alias wgetd='wget -r --no-parent -R "index.html*"'
+
+## Plugins
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
