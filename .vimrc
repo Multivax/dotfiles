@@ -8,10 +8,14 @@ set tabstop=4
 set smartindent
 filetype indent plugin on
 
+"" Binds
 " Ctrl-backspace in insert mode
 set backspace=indent,eol,start
 imap <C-BS> <C-W>
 imap <C-H> <C-W>
+
+" toggle fold under cursor
+nmap <tab> za
 
 " Search behaviour
 set incsearch
@@ -67,3 +71,7 @@ set ruler
 
 " Mouse
 set mouse=a
+
+" Markdown
+let g:markdown_folding = 1
+" Toggle folds with tab in markdown
