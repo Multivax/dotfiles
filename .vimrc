@@ -1,12 +1,20 @@
-"" Behaviour
-
+"" Plugins
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'christoomey/vim-tmux-navigator'
+call vundle#end()
+
+filetype indent plugin on
 
 " Indentation
 set shiftwidth=4
 set tabstop=4
 set smartindent
-filetype indent plugin on
 
 "" Binds
 " Ctrl-backspace in insert mode
@@ -62,12 +70,14 @@ set ruler
 
 "" Keybinds
 
-" TODO that tmux vim compatibility thingy
-" Switch windows with Alt+movement key
-" map <A-h> <C-w>h
-" map <A-j> <C-w>j
-" map <A-k> <C-w>k
-" map <A-l> <C-w>l
+" FIXME: this doesn't work with meta on my setup for some reason.
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 " Mouse
 set mouse=a
