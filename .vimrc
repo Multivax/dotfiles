@@ -7,6 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'christoomey/vim-tmux-navigator'
+	Plugin 'junegunn/goyo.vim'
 call vundle#end()
 
 filetype indent plugin on
@@ -25,6 +26,18 @@ imap <C-H> <C-W>
 " toggle fold under cursor
 nmap <tab> za
 
+" Goyo mode
+nnoremap go :Goyo<cr>
+
+" FIXME: this doesn't work with meta on my setup for some reason.
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+
 " Search behaviour
 set incsearch
 set ignorecase
@@ -33,9 +46,11 @@ set hlsearch
 
 
 set wildmenu
+set showcmd
 
-" Exit instert mode more faster (probably bad)
-set timeoutlen=0
+" Exit instert mode more faster (I KNEW IT WAS BAD)
+set timeoutlen=1000
+set ttimeoutlen=0
 
 "" Looks
 
@@ -65,19 +80,6 @@ set background=dark
 " Number and ruler
 set number
 set ruler
-
-
-
-"" Keybinds
-
-" FIXME: this doesn't work with meta on my setup for some reason.
-let g:tmux_navigator_no_mappings = 1
-
-nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 " Mouse
 set mouse=a
