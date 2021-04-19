@@ -40,7 +40,7 @@ zle -N zle-keymap-select
 ## Looks
 
 # Prompt
-PROMPT="%B[%n@%m]: %F{cyan}%(4~|.../%3~|%~)%f %b
+PROMPT="%B[%n@%m]: %F{magenta}%~%f%b
 > "
 
 # Put a newline before showing the prompt (but not the first time)

@@ -77,6 +77,7 @@ key_bindings:
   - { key: Key3,      mods: Alt|Shift, chars: "\x1b#"                       } # Alt + #
   - { key: Period,    mods: Alt|Shift, chars: "\x1b>"                       } # Alt + >
   - { key: Comma,     mods: Alt|Shift, chars: "\x1b<"                       } # Alt + <
+  - { key: Comma,     mods: Alt,       chars: "\x1b,"                       } # Alt + ,
   - { key: Minus,     mods: Alt|Shift, chars: "\x1b_"                       } # Alt + _
   - { key: Key5,      mods: Alt|Shift, chars: "\x1b%"                       } # Alt + %
   - { key: Key6,      mods: Alt|Shift, chars: "\x1b^"                       } # Alt + ^
@@ -89,7 +90,7 @@ font:
 colors: # (Night Owl)
   # Default colors
   primary:
-    background: '#011627'
+    background: '#111111'
     foreground: '#d6deeb'
 
   cursor:
@@ -101,7 +102,7 @@ colors: # (Night Owl)
 
   # Normal colors
   normal:
-    black:   '#011627'
+    black:   '#111111'
     red:     '#ef5350'
     green:   '#22da6e'
     yellow:  '#c5e478'

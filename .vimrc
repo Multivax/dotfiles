@@ -8,6 +8,7 @@ call vundle#begin()
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'christoomey/vim-tmux-navigator'
 	Plugin 'junegunn/goyo.vim'
+	Plugin 'haishanh/night-owl.vim'
 call vundle#end()
 
 filetype indent plugin on
@@ -53,6 +54,10 @@ set timeoutlen=1000
 set ttimeoutlen=0
 
 "" Looks
+if (has("termguicolors"))
+ set termguicolors
+endif
+colorscheme night-owl
 
 " Wrap words properly
 set linebreak
