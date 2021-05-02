@@ -1,3 +1,45 @@
+# Looks
+font:
+  normal:
+    # Need to install this manually because macos moment
+    family: SF Mono
+    style: Light
+  size: 13
+colors: # (Night Owl)
+  # Default colors
+  primary:
+    background: '#111111'
+    foreground: '#d6deeb'
+
+  cursor:
+    text: '#011627'
+    cursor: '#d6deeb'
+
+  selection:
+    background: '#1b90dd'
+
+  # Normal colors
+  normal:
+    black:   '#111111'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#c5e478'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#21c7a8'
+    white:   '#ffffff'
+
+  # Bright colors
+  bright:
+    black:   '#575656'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#ffeb95'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#ffffff'
+
 key_bindings:
   - { key: N,        mods: Command, action: SpawnNewInstance            }
   - { key: Back,     mods: Super,   chars: "\x15"                       } # delete word/line
@@ -84,40 +126,3 @@ key_bindings:
   - { key: Backslash, mods: Alt,       chars: "\x1b\\"                      } # Alt + \
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"                       } # Alt + |
 
-# Looks
-font:
-  size: 13
-colors: # (Night Owl)
-  # Default colors
-  primary:
-    background: '#111111'
-    foreground: '#d6deeb'
-
-  cursor:
-    text: '#011627'
-    cursor: '#d6deeb'
-
-  selection:
-    background: '#1b90dd'
-
-  # Normal colors
-  normal:
-    black:   '#111111'
-    red:     '#ef5350'
-    green:   '#22da6e'
-    yellow:  '#c5e478'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#21c7a8'
-    white:   '#ffffff'
-
-  # Bright colors
-  bright:
-    black:   '#575656'
-    red:     '#ef5350'
-    green:   '#22da6e'
-    yellow:  '#ffeb95'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#7fdbca'
-    white:   '#ffffff'

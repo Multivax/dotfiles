@@ -5,6 +5,7 @@ autoload -Uz compinit && compinit
 
 # Vi bindings
 bindkey -v
+bindkey -v '^?' backward-delete-char
 
 # Set cursor change escape for different terminals
 if [ $TMUX ]; then
