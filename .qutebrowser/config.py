@@ -2,6 +2,7 @@ from qutebrowser.config.configfiles import ConfigAPI
 from qutebrowser.config.config import ConfigContainer
 
 config: ConfigAPI = config
+config.load_autoconfig()
 c: ConfigContainer = c
 
 raw_git = "https://raw.githubusercontent.com/"
