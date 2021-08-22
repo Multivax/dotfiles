@@ -3,11 +3,14 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.fzf
 
 call vundle#begin()
 	Plugin 'VundleVim/Vundle.vim'
 	Plugin 'christoomey/vim-tmux-navigator'
 	Plugin 'junegunn/goyo.vim'
+	Plugin 'junegunn/fzf'
+	Plugin 'junegunn/fzf.vim'
 	Plugin 'haishanh/night-owl.vim'
 call vundle#end()
 
@@ -25,10 +28,14 @@ imap <C-BS> <C-W>
 imap <C-H> <C-W>
 
 " toggle fold under cursor
+" TODO: Add more tab bindings
 nmap <tab> za
 
 " Goyo mode
 nnoremap go :Goyo<cr>
+
+" Fzf buffers
+nnoremap gb :Buffers<cr>
 
 " FIXME: this doesn't work with meta on my setup for some reason.
 let g:tmux_navigator_no_mappings = 1
