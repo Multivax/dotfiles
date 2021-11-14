@@ -69,6 +69,7 @@ colorscheme night-owl
 " Wrap words properly
 set linebreak
 set wrap
+set breakindent
 
 " Show tabs and trailing spaces
 set listchars=tab:»\ ,trail:·
