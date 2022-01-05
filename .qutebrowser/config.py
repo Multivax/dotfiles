@@ -27,6 +27,13 @@ config.set(
     ],
 )
 
+# aliasses
+c.aliases = {
+    "w": "session-save --only-active-window",
+    "q": "close",
+    "l": "session-load"
+}
+
 # block youtube ads from playing. still have to skip them however.
 
 # def filter_yt(info: interceptor.Request):
