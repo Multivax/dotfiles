@@ -7,14 +7,9 @@ autoload -Uz compinit && compinit
 bindkey -v
 bindkey -v '^?' backward-delete-char
 
-# Set cursor change escape for different terminals
-if [ $TMUX ]; then
-	CURSOR_BLCK="\ePtmux;\e\e[2 q\e\\"
-	CURSOR_LINE="\ePtmux;\e\e[6 q\e\\"
-else
-	CURSOR_BLCK="\e[2 q"
-	CURSOR_LINE="\e[6 q"
-fi
+# Set cursor change escape codes
+CURSOR_BLCK="\e[2 q"
+CURSOR_LINE="\e[6 q"
 
 # Change cursor when changing modes
 zle-keymap-select zle-line-init() {
