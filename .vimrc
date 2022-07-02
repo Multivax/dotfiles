@@ -36,6 +36,7 @@ nnoremap go :Goyo<cr>
 
 " Fzf buffers
 nnoremap gb :Buffers<cr>
+set hidden
 
 " FIXME: this doesn't work with meta on my setup for some reason.
 let g:tmux_navigator_no_mappings = 1
@@ -51,7 +52,6 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-
 
 set wildmenu
 set showcmd
